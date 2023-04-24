@@ -125,7 +125,7 @@ header nav .mode .mode-switch.active::after{
 }
 
 #container{
-    padding: 60px 120px 0 120px;
+    padding: 60px 120px 0 120px;    
 }
 
 #container h2{
@@ -139,6 +139,7 @@ header nav .mode .mode-switch.active::after{
     height: 40px;
     padding: 0 26px;
     border-radius: 5px;
+    box-shadow: 9px 10px 14px 0px rgba(0,0,0,0.75);
     border: 0;
     background-color: var(--bg-color3);
     font-weight: bold;
@@ -155,7 +156,7 @@ header nav .mode .mode-switch.active::after{
     background-color: #ffffff;
     padding: 26px;
     border-radius: 5px;
-    box-shadow: 0 5px 15px #00000050;
+    box-shadow: 9px 10px 14px 0px rgba(0,0,0,0.75);
 }
 
 #tabela .acoes{

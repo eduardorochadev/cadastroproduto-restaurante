@@ -17,7 +17,7 @@ function listarCategorias()
                 },
                 { data: '',
                     render: function(data, type, row){
-                        return `<ion-icon class="btn" onclick="update(${row.id})" name="create"></ion-icon>
+                        return `<ion-icon class="btn" onclick="editarCategoria(${row.id})" name="create"></ion-icon>
                                 <ion-icon class="btn" onclick="deletarCategoria(${row.id})" name="trash"></ion-icon>`;
                     }
                 }
@@ -60,14 +60,15 @@ function deletarCategoria(idCategoria)
 })
 }
 
-function update()
+function editarCategoria(idCategoria)
 
 {
-    fetch(`https://6439dfea90cd4ba563ef55e2.mockapi.io/api/v1/categorias/`,{
-        method: 'UPDATE'
+    fetch(`https://6439dfea90cd4ba563ef55e2.mockapi.io/api/v1/categorias/${idCategoria}`,{
+        method: 'PUT'        
     })
     .then(res => res.json())
     .then(() => {
+        // window.prompt("TESTE: Função OK")
         window.location.reload();        
 })
-} console.log(update)
+}
