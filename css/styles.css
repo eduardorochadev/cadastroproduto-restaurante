@@ -10,9 +10,9 @@
 }
 
 :root{
-    --bg-color1: #f5f5f5;
-    --bg-color2: #594a46;
-    --bg-color3: #26ff05;
+    --bg-color1: #858585;
+    --bg-color2: #56757e;
+    --bg-color3: #668ec2;
     --bg-color4: #000000
 }
 
@@ -129,8 +129,9 @@ header nav .mode .mode-switch.active::after{
 }
 
 #container h2{
+    width: 320px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     margin-bottom: 26px;
 }
 
